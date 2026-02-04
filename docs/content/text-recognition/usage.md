@@ -54,4 +54,10 @@ if (!result.canceled) {
 
 ### Script parameter
 
-Use the `TextRecognitionScript` enum: `LATIN`, `CHINESE`, `DEVANAGARI`, `JAPANESE`, `KOREAN`. If you pass an unsupported script string on iOS, the native module rejects with Unsupported script.
+Use the `TextRecognitionScript` enum:
+
+```ts
+LATIN | CHINESE | DEVANAGARI | JAPANESE | KOREAN
+```
+
+On iOS, passing any other script string causes the native module to reject with Unsupported script.

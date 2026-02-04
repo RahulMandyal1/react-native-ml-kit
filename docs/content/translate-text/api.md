@@ -45,4 +45,11 @@ interface TranslateTextOptions {
 
 ### `TranslateLanguage`
 
-Exported enum of language codes (e.g. `TranslateLanguage.ENGLISH = 'en'`, `TranslateLanguage.SPANISH = 'es'`). Values are passed to the native side; Android uses `TranslateLanguage.fromLanguageTag()` to obtain the ML Kit language constant. See index.ts for the full list (Afrikaans, Albanian, Arabic, … Welsh).
+Exported enum of language codes. For example:
+
+```ts
+TranslateLanguage.ENGLISH = 'en'
+TranslateLanguage.SPANISH = 'es'
+```
+
+Values are passed to the native side; Android uses `TranslateLanguage.fromLanguageTag()` to obtain the ML Kit language constant. See index.ts for the full list (Afrikaans, Albanian, Arabic, … Welsh).
