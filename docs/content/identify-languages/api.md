@@ -17,9 +17,9 @@ Identifies the most likely language of the given text.
 | :-------- | :------- | :----------------- |
 | `text`    | `string` | Input text to analyze. |
 
-**Returns:** `Promise<string>` — A [BCP-47](https://en.wikipedia.org/wiki/IETF_language_tag) language code (e.g. `"en"`, `"fr"`), or `"und"` if the language could not be determined. May be `null` in edge cases (e.g. Android `identifyLanguage` can return null).
+**Returns:** `Promise<string>` — A [BCP-47](https://en.wikipedia.org/wiki/IETF_language_tag) language code (e.g. `en`, `fr`), or `und` if the language could not be determined. May be `null` in edge cases (e.g. Android `identifyLanguage` can return null).
 
-**Rejects:** With message `"Language identification failed"` (Android) or code `"Identify Languages"` and message `"Language identification failed"` (iOS).
+**Rejects:** With message Language identification failed (Android) or code Identify Languages and message Language identification failed (iOS).
 
 ---
 

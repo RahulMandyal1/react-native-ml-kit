@@ -15,7 +15,7 @@ Labels an image and returns the predicted labels above the confidence threshold.
 | :--------- | :------- | :-------------------------------------------------------------------------- |
 | `imageURL` | `string` | Local file URI (e.g. `file:///...`). On **Android** only, `http(s)` URLs are also supported. |
 
-**Returns:** `Promise<Label[]>` — Array of labels (empty if none meet the threshold). Rejects with `"Image labeling failed"` (Android) or code `"Image Labeling"` / message `"Image labeling failed"` (iOS).
+**Returns:** `Promise<Label[]>` — Array of labels (empty if none meet the threshold). Rejects with Image labeling failed (Android) or code Image Labeling / message Image labeling failed (iOS).
 
 **Native confidence threshold:** fixed at **0.5** on both Android and iOS (see `ImageLabelingModule.java` and `ImageLabeling.m`).
 

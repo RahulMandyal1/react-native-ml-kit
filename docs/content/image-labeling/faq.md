@@ -53,7 +53,7 @@ This package requires a minimum iOS deployment target of **15.5** (see the modul
   </TabItem>
 </Tabs>
 
-### ImageLabeling is null / "doesn't seem to be linked"
+### ImageLabeling is null / doesn't seem to be linked
 
 Usually means the native module isn’t linked or the app wasn’t rebuilt after installing the package.
 

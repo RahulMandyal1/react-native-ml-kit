@@ -53,18 +53,18 @@ This package requires a minimum iOS deployment target of **15.5** (see `RNMLKitT
   </TabItem>
 </Tabs>
 
-### TextRecognition is null / "doesn't seem to be linked"
+### TextRecognition is null / doesn't seem to be linked
 
 The native module is not linked or the app was not rebuilt after installing the package.
 
 - **Expo**: Use a **development build** (not Expo Go).
 - **Bare**: Rebuild the app and run `cd ios && pod install` for iOS.
 
-### "Unsupported script" on iOS
+### Unsupported script on iOS
 
-The iOS native module only accepts `nil`/`"Latin"`, `"Chinese"`, `"Devanagari"`, `"Japanese"`, or `"Korean"` (see `TextRecognition.m`, lines 95–106). Any other script value causes reject with code `"Text Recognition"` and message `"Unsupported script"`. Use the `TextRecognitionScript` enum so the correct string is passed.
+The iOS native module only accepts `nil`/Latin, Chinese, Devanagari, Japanese, or Korean (see `TextRecognition.m`, lines 95–106). Any other script value causes reject with code Text Recognition and message Unsupported script. Use the `TextRecognitionScript` enum so the correct string is passed.
 
-### Android: "Text recognition failed"
+### Android: Text recognition failed
 
 - Use a valid local URI (`file://` or `content://`) or, on Android only, an `http(s)` URL.
 - Ensure the image is readable and not corrupted.

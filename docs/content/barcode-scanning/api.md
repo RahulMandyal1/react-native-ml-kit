@@ -15,7 +15,7 @@ Scans an image for barcodes. The native module exposes a single method `scan` th
 | :---------- | :------- | :-------------------------------------------------------------------------- |
 | `imageURL`  | `string` | Local file URI (e.g. `file:///...`). On **Android** only, `http://` or `https://` URLs are also supported (image is downloaded then scanned). |
 
-**Returns:** `Promise<Barcode[]>` — List of detected barcodes (empty array if none). Rejects with `"Barcode scanning failed"` (Android) or `"Barcode Scanning failed"` (iOS) on error.
+**Returns:** `Promise<Barcode[]>` — List of detected barcodes (empty array if none). Rejects with Barcode scanning failed (Android) or Barcode Scanning failed (iOS) on error.
 
 ---
 

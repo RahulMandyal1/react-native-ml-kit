@@ -63,7 +63,7 @@ cd ios && pod install
 
 Then rebuild the app.
 
-### BarcodeScanning is null / "doesn't seem to be linked"
+### BarcodeScanning is null / doesn't seem to be linked
 
 The native module is not linked or the app wasn’t rebuilt after adding the package.
 

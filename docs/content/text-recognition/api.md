@@ -16,7 +16,7 @@ Recognizes text in an image. Optional second argument selects the script (defaul
 | `imageURL` | `string`                | Local file URI (e.g. `file:///...`). On **Android** only, `http(s)` URLs are supported. |
 | `script`   | `TextRecognitionScript` | Optional. `'Latin'`, `'Chinese'`, `'Devanagari'`, `'Japanese'`, or `'Korean'`. Default: `TextRecognitionScript.LATIN`. On Android, any other value falls back to Latin; on iOS, unsupported script rejects. |
 
-**Returns:** `Promise<TextRecognitionResult>` — `{ text, blocks }`. Rejects with `"Text recognition failed"` (Android) or code `"Text Recognition"` / message `"Text recognition failed"` (iOS). On iOS only, unsupported `script` rejects with message `"Unsupported script"`.
+**Returns:** `Promise<TextRecognitionResult>` — `{ text, blocks }`. Rejects with Text recognition failed (Android) or code Text Recognition / message Text recognition failed (iOS). On iOS only, unsupported `script` rejects with message Unsupported script.
 
 ---
 
@@ -107,4 +107,4 @@ enum TextRecognitionScript {
 }
 ```
 
-Native modules expect the **string** value (e.g. `'Latin'`, `'Chinese'`). Unsupported script on iOS causes reject with `"Unsupported script"`.
+Native modules expect the string value (e.g. Latin, Chinese). Unsupported script on iOS causes reject with Unsupported script.
